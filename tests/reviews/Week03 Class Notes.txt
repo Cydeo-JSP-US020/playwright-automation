@@ -10,6 +10,7 @@ Week02 Review:
             headed/headless
             Parallel
             retries
+            slowMotion
             playwright browsers
 
             Recording test videos
@@ -18,13 +19,25 @@ Week02 Review:
 
         SEP Project
 
+Set up playwright:
+    npm init playwright@latest
+
+package-lock.json: metadata
+
 Class starts at 10:05 am EST
 
-    Next Week:
-        dotenv
-        js-fakers
-        Gherkin syntaxes
-        More copilot skills
+
+    Next Week
+        During the week days:
+            Module03
+            Practice on the Spartan App (UI)
+            Manual testing SEP user stories
+
+        During live class:
+            dotenv
+            js-fakers
+            Gherkin syntaxes
+            More copilot skills
 
 ============== GetBy Methods of Playwright =================
 

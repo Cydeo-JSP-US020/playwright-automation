@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tests": "npx playwright test",
-    "test:specific": "npx playwright test --grep file-name.spec.js",
-    "test:tag": "npx playwright test --grep @tagName",
+    "tests:headless": "npx playwright test",
+    "tests:headed": "npx playwright test --headed",
+    "test:specific:headless": "npx playwright test --grep file-name.spec.js",
+    "test:specific:headed": "npx playwright test --grep file-name.spec.js --headed",
+    "test:tag:headless": "npx playwright test --grep @failed",
+    "test:tag:headed": "npx playwright test --grep @failed --headed",
     "report": "npx playwright show-report"
   },
   "keywords": [],
