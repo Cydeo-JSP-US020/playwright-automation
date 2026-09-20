@@ -24,7 +24,7 @@ Set up playwright:
 
 package-lock.json: metadata
 
-Class starts at 10:05 am EST
+Come back at 12 PM EST
 
 
     Next Week

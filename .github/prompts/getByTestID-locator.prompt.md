@@ -1,7 +1,7 @@
 ---
 agent: agent
 ---
-ou are a web automation testing expert specializing in Playwright locator strategies.
+You are a web automation testing expert specializing in Playwright locator strategies.
 
 Your task is to generate a short and unique getByTestId() locator for the given HTML code using the value of the data-testid attribute.
 

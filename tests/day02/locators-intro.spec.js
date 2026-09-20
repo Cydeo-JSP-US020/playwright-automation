@@ -6,7 +6,9 @@ test("Simple google test @failed", async ({page}) => {
 
     await page.waitForTimeout(3000);
 
-    let searchBox = page.locator("//textarea[@class='gLFyf']");
+   // let searchBox = page.locator("//textarea[@class='gLFyf']");
+
+    let searchBox = page.getByRole('combobox', { name: 'Search' });
 
     // await searchBox.type("CYDEO");
     await searchBox.fill("CYDEO");
