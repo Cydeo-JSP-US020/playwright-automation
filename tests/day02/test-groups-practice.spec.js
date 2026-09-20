@@ -7,7 +7,7 @@ test.describe("Practice.cydeo", () => {
     });
 
     test.afterEach(async ({page}) => {
-        await page.waitForTimeout(3000);
+         
     });
 
     test("title of page", async ({ page }) => {

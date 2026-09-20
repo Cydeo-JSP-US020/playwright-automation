@@ -4,7 +4,7 @@ test("Simple google test @failed", async ({page}) => {
     // test codes
     await page.goto("https://www.google.com");
 
-    await page.waitForTimeout(3000);
+     
 
    // let searchBox = page.locator("//textarea[@class='gLFyf']");
 
@@ -13,11 +13,11 @@ test("Simple google test @failed", async ({page}) => {
     // await searchBox.type("CYDEO");
     await searchBox.fill("CYDEO");
 
-    await page.waitForTimeout(3000);
+     
 
     await searchBox.press("Enter");
 
-    await page.waitForTimeout(3000);
+     
 
 });
 
