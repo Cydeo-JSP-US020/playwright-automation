@@ -1,0 +1,64 @@
+Week02 Review:
+
+    Topics:
+        Playwright Fundamentals 
+            Test Function
+            page fxitur
+            Hooks
+
+        Global Configurations
+            headed/headless
+            Parallel
+            retries
+            playwright browsers
+
+            Recording test videos
+            Local Desktop browser configurations
+            Mobile browser configurations
+
+        SEP Project
+
+Class starts at 10:05 am EST
+
+    Next Week:
+        dotenv
+        js-fakers
+        Gherkin syntaxes
+        More copilot skills
+
+============== GetBy Methods of Playwright =================
+
+GetByRole Locator
+    Key idea: Only when the element has a meaningful ARIA/implicit role and accessible name.
+
+    Use getByRole() when:
+        The element has a valid implicit role (button, link, heading, textbox, checkbox, etc.), or an explicit role attribute.
+        It also has a clear accessible name via text, aria-label, aria-labelledby, alt, or associated label.
+
+    Do not use it if:
+        The element is a generic div/span with no role and no useful text/label.
+        Multiple elements share the same role and name so the locator would not be unique.
+
+GetByText Locator
+    Key idea: Only when there is stable, meaningful visible text.
+
+    Use getByText() when:
+        The element has clear, unique visible text.
+        The text is relatively short and unlikely to change frequently.
+
+    Do not use it if:
+        The element is only an icon with no text.
+        The text is clearly dynamic (timestamps, counters, random IDs).
+        The only text is a very long paragraph or block where uniqueness is unclear.
+
+
+GetByLabel Locator
+    Key idea: Only when it is a labeled form control.
+
+    Use getByLabel() when:
+        The element is a form control (input, select, textarea, checkbox, radio, etc.).
+        It has an associated label (via for or wrapping) or an aria-label / aria-labelledby.
+
+    Do not use it if:
+        The element is not a form control.
+        There is no label or accessible label.
