@@ -1,0 +1,122 @@
+Start Application Page:
+
+Test Case: Verify that clicking the Terms & Conditions link opens a new Terms & Conditions tab.
+
+Steps:
+	1. Ensure the user is on the enrollment page.
+
+	2. Verify that the Terms & Conditions link is displayed in the left footer area.
+
+	3. Verify that the Terms & Conditions link is enabled.
+
+	4. Click the Terms & Conditions link and confirm that it opens in a new browser tab.
+
+
+Test Case: Verify that the first stepper is blue initially and changes to green once Step 1 is completed.
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Verify that Stepper 1 is visible and its color is blue.
+
+	3. Enter the personal details.
+
+	4. Click the Next button on the start application page to navigate to Step 2.
+
+	5. Verify that Stepper 1 changes its color to green.
+
+
+Test Case: Verify that personal input fields are enabled and accept user input
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Enter personal details into the input fields.
+
+	3. Verify that the input fields display the entered values correctly.
+
+
+
+Payment Plan Page:
+
+Test Case: Verify that Step 2 stepper is blue and Step 1 stepper is green.
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Verify that the Step 1 stepper is green.
+
+	4. Verify that the Step 2 stepper is blue.
+
+
+Test Case: Verify that the Next button is disabled by default.
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Verify that the inactive Next button is displayed and disabled
+
+
+Test Case: Verify that the Next button becomes enabled when a payment plan is selected
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Select the Upfront Payment Plan option.
+
+	4. Verify that the active Next button is displayed and enabled.
+
+
+
+Test Case: Verify Clicking the active next button will change the stepper 2 color to green
+
+Steps:
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Select the Installments Payment Plan
+
+	4. Click the active next button
+
+	4. Verify that the Step 2 stepper is blue.
+
+
+
+Review Step:
+
+Test Case: Verify that Step 1 & Step 2 steppers are green and Step 3 stepper is blue
+
+Steps:
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application and Payment Plan steps, then proceed to the Review step.
+
+	3. Verify that the Step 1 and Step 2 steppers are displayed in green.
+
+	4. Verify that the Step 3 stepper is displayed in blue.
+
+
+Test Case: Verify that the payment input fields are enabled and accept card details
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application and Payment Plan steps, then proceed to the Review step.
+
+	3. Enter valid card details into the payment frame fields.
+
+	4. Verify that the entered card details are correctly displayed in the respective input fields.
+
