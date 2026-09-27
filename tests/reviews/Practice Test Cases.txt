@@ -38,6 +38,7 @@ Steps:
 	3. Verify that the input fields display the entered values correctly.
 
 
+=========================
 
 Payment Plan Page:
 
@@ -93,6 +94,7 @@ Steps:
 	4. Verify that the Step 2 stepper is blue.
 
 
+========================================
 
 Review Step:
 
