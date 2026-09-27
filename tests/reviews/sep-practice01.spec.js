@@ -34,28 +34,20 @@ test.describe('Start Application Page tests', () => {
 
     let step1StepperCircle = page.locator("//div[@class='step-circle'][span[normalize-space()='1']]");   // Eman
     let step2StepperCircle = page.locator('#stepper1 .step').nth(1).locator('.step-circle');; // Paul
-    let firstNameInput = page.locator("//input[@formcontrolname='firstName']");; // Kristina
-    let lastNameInput = page.locator(" //input[@formcontrolname='lastName']"); // Kristina
-    let emailInput = page.locator("//input[@formcontrolname='email']"); // Igor
-    let phoneInput = page.locator("//input[@formcontrolname='phoneNumber']"); // Igor
-    let howDidYouHearAboutUsSelect =  page.locator("//mat-label[text()='How did you hear about us?']"); // Humaira
-    let nextButton = page.locator("//button[@class='next-button']"); // Humaira
 
-
-    await firstNameInput.fill('John');
-    await lastNameInput.fill('Doe');
-    await emailInput.fill('johndoe@example.com');
-    await phoneInput.fill('1234567890');
-    await howDidYouHearAboutUsSelect.click();
-    await page.getByText('Email', { exact: true }).click();
-
-    expect(step1StepperCircle).toHaveCSS("background-color", "rgb(1, 201, 255)");
-
-    await nextButton.click();
+    await CommonUI.completeStartApplicationStep(page, 'John', 'Doe', 'johndoe@example.com', '1234567890', 'Email');
 
     await expect(step1StepperCircle).toHaveCSS("background-color", "rgb(172, 245, 138)");
+
     await expect(step2StepperCircle).toHaveCSS("background-color", "rgb(1, 201, 255)");
 
+  });
+
+  test('Complete the start application step with default personal details', async ({ page }) => {
+    await CommonUI.completeStartApplicationStep(page);
+
+    const step2StepperCircle = page.locator('#stepper1 .step').nth(1).locator('.step-circle');
+    await expect(step2StepperCircle).toHaveCSS("background-color", "rgb(1, 201, 255)");
   });
 
 
