@@ -7,6 +7,9 @@ Week03
         dotenv & js-faker
 
 
+        Playwright MCP & CLI setup on Copilot CLI
+
+
 Next Week:
     During the week days:
         Jenkins Job Configurations 

@@ -22,7 +22,7 @@ export class CommonUI {
         await page.locator("//input[@formcontrolname='phoneNumber']").fill(phoneNumber);
 
         await page.locator("//mat-label[text()='How did you hear about us?']").click();
-        await page.getByText(howDidYouHear, { exact: true }).click();
+        await page.getByRole('option', { name: howDidYouHear, exact: true }).click();
         await page.locator("//button[@class='next-button']").click();
     }
 
