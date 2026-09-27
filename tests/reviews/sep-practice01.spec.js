@@ -1,5 +1,5 @@
 
-import { test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test.describe('Start Application Page tests', () => {
 
@@ -16,6 +16,23 @@ test.describe('Start Application Page tests', () => {
     
 
   test('Verify that clicking the Terms & Conditions link opens a new Terms & Conditions tab', async ({ page }) => {
+
+    let popupEvent = page.waitForEvent("popup");
+
+    let termsAndConditionsLink = page.getByRole('link', { name: 'Terms and conditions' });
+
+    // verify that the link is visible and enabled
+    await expect(termsAndConditionsLink).toBeVisible();
+    await expect(termsAndConditionsLink).toBeEnabled();
+
+    await termsAndConditionsLink.click();
+
+    const newPage = await popupEvent;
+
+    const termsPagesHeader = newPage.getByRole('heading', { name: 'Terms and Conditions' });
+
+    await expect(termsPagesHeader).toBeVisible();
+
   });
 
 
