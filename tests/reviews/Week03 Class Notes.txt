@@ -1,19 +1,28 @@
 Week03
 
     Topics:
-        Gherkin Syntaxes
+        Gherkin Syntaxes 
+            (Background, Scenario, Scenario Outline & Example, Given, When, Then, And)
         Playwright modul03 review
         dotenv & js-faker
 
 
 Next Week:
     During the week days:
-        Jenkins Job Configurations (3 hours videos)
+        Jenkins Job Configurations 
         Feature files for SEP User stories
 
     During the live class:
         GitHub Actions ( .yml )
         Browser & Context Fixture for UI testing
+
+Next next week: Project Implementation Week
+    Playwright BDD Framework (JS version)
+    Git Strategy ( feature, develop & main branches)
+    Set up the CI piplines (on both jenkins & github actions)
+
+
+
 
 Class starts at 10:05 AM EST
 
