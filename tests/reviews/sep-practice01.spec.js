@@ -6,11 +6,11 @@ test.describe('Start Application Page tests', () => {
     test.beforeEach(async ({ page }) => { // Ensure the user is on the enrollment page.
 
         
-        const CREDENTIALS = Buffer.from('automation-user:123abc').toString('base64');
+        const CREDENTIALS = Buffer.from(`${process.env.SEP_USERNAME}:${process.env.SEP_PASSWORD}`).toString('base64');
 
         await page.setExtraHTTPHeaders( {'Authorization': `Basic ${CREDENTIALS}`} );
 
-        await page.goto("https://qa.sep.tdtm.cydeo.com/taws")
+        await page.goto(process.env.SEP_QA_URL);
         
     })
     
