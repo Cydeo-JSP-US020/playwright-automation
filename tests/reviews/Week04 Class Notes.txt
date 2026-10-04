@@ -1,0 +1,49 @@
+Week04
+
+    Topics:
+        Jenkins Review
+        
+        GitHub Actions
+
+        Playwright fixtures for UI Testing:
+            page
+            Context
+            Browser
+
+come back at 12:45 PM EST
+
+    Next Week: Project Implementation
+        During the week days:
+            Setting Playwright BDD Framework
+            Wrok on the automation of user stories
+
+        During the live class:
+            2 user stories automation ===> 2.5 hours
+
+            Playwright fixtures for API Testing:
+                Request
+                BaseURL
+
+                Topics:
+                    HTTP Methods: Get, Post, Put, Patch, Delete
+                    Serilization & deserilization
+                    Path & Query Parmeters
+                    Json body, headers.
+
+
+CI Pipeline assignment (After project implementation Week):
+    1. setup smoke suit on both Jenkins & github actions that run every day from Monday to Friday at 8 AM EST
+    2. set regression workflow on both Jenkins & github actions run every day from Monday to Thursday at 7 PM EST
+
+
+Jenkins Issues:
+    Right Plugins need to installed
+    Less User friendlier
+
+
+
+
+Modern CI Piplines:
+    GitHub Actions
+    Gitlab
+    CircleCI
