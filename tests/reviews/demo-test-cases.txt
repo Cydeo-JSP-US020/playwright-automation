@@ -1,0 +1,52 @@
+Payment Plan Page:
+
+Test Case: Verify that Step 2 stepper is blue and Step 1 stepper is green.
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Verify that the Step 1 stepper is green.
+
+	4. Verify that the Step 2 stepper is blue.
+
+
+Test Case: Verify that the Next button is disabled by default.
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Verify that the inactive Next button is displayed and disabled
+
+
+Test Case: Verify that the Next button becomes enabled when a payment plan is selected
+
+Steps:
+
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Select the Upfront Payment Plan option.
+
+	4. Verify that the active Next button is displayed and enabled.
+
+
+
+Test Case: Verify Clicking the active next button will change the stepper 2 color to green
+
+Steps:
+	1. Ensure the user is on the enrollment page.
+
+	2. Complete the Start Application step and navigate to the Payment Plan step.
+
+	3. Select the Installments Payment Plan
+
+	4. Click the active next button
+
+	4. Verify that the Step 2 stepper is blue.
